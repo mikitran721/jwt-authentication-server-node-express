@@ -1,0 +1,25 @@
+GET http://localhost:4000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJwb28iLCJpYXQiOjE2OTMyMzI3NzYsImV4cCI6MTY5MzIzMjgxMX0.X9uX2ilpzUbsZm4TpTGuAXykgLjnd4CfT6aP2gsQgh0 
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "poo"
+}
+
+###
+
+POST http://localhost:5000/token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJwb28iLCJpYXQiOjE2OTMyMzI3NDMsImV4cCI6MTY5MzIzNjM0M30.sPHVocrC5HVXragmHE0Y7Uo3IqForwr8TjWrSkRRI0Y"
+}
+
+###
+
+DELETE http://localhost:5000/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJwb28iLCJpYXQiOjE2OTMyMzI3NzYsImV4cCI6MTY5MzIzMjgxMX0.X9uX2ilpzUbsZm4TpTGuAXykgLjnd4CfT6aP2gsQgh0
